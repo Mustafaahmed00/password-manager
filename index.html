@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Safety Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Safety Tool</h1>
+        <div id="app">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <button onclick="checkPassword()">Check Password Strength</button>
+            <div id="result"></div>
+        </div>
+        <div id="suggestion">
+            <h2>Suggested Strong Password</h2>
+            <button onclick="suggestStrongPassword()">Generate Strong Password</button>
+            <div id="strong-password"></div>
+            <button onclick="copyToClipboard('strong-password')">Copy to Clipboard</button>
+        </div>
+        <div id="save-password">
+            <h2>Save Password</h2>
+            <input type="text" id="password-name" placeholder="Enter a name for your password">
+            <input type="text" id="app-name" placeholder="Enter the app name">
+            <button onclick="savePassword()">Save Password</button>
+            <a href="saved-passwords.html" class="button">View Saved Passwords</a>
+        </div>
+        <div id="encryption">
+            <h2>Encryption Tool</h2>
+            <textarea id="plaintext" placeholder="Enter text to encrypt"></textarea>
+            <input type="text" id="key" placeholder="Enter encryption key">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+            <div id="encrypted"></div>
+            <div id="decrypted"></div>
+        </div>
+        <div id="secure-notes">
+            <h2>Secure Notes</h2>
+            <textarea id="note-text" placeholder="Enter your secure note"></textarea>
+            <input type="text" id="note-key" placeholder="Enter encryption key">
+            <button onclick="encryptNote()">Encrypt Note</button>
+            <button onclick="decryptNote()">Decrypt Note</button>
+            <div id="encrypted-note"></div>
+            <div id="decrypted-note"></div>
+        </div>
+        <div id="breach-checker">
+            <h2>Breach Checker</h2>
+            <input type="password" id="breach-password" placeholder="Enter your password">
+            <button onclick="checkBreach()">Check if Breached</button>
+            <div id="breach-result"></div>
+        </div>
+        <div id="tips">
+            <h2>Security Tips</h2>
+            <ul id="security-tips">
+                <li>Use a mix of letters, numbers, and special characters.</li>
+                <li>Avoid using easily guessable information like birthdays or names.</li>
+                <li>Use a password manager to generate and store unique passwords.</li>
+                <li>Change your passwords regularly and avoid reusing them.</li>
+            </ul>
+        </div>
+        <div id="2fa-guide">
+            <h2>Two-Factor Authentication Guide</h2>
+            <p>Enable two-factor authentication (2FA) to add an extra layer of security to your accounts. Here are some guides to set up 2FA for popular services:</p>
+            <ul>
+                <li><a href="https://support.google.com/accounts/answer/185839" target="_blank">Google</a></li>
+                <li><a href="https://www.facebook.com/help/148233965247823" target="_blank">Facebook</a></li>
+                <li><a href="https://support.apple.com/en-us/HT204915" target="_blank">Apple</a></li>
+                <li><a href="https://support.microsoft.com/en-us/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-478a05fd-7604-4849-8c6e-59f69f03a1e0" target="_blank">Microsoft</a></li>
+            </ul>
+        </div>
+        <div id="dark-mode-toggle">
+            <label>
+                <input type="checkbox" id="dark-mode-switch" onchange="toggleDarkMode()"> Dark Mode
+            </label>
+        </div>
+        <h2>Custom Password Generator</h2>
+        <a href="custom-password.html" class="button">Custom Password Generator</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
