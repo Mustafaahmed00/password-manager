@@ -1,5 +1,8 @@
 # Password Safety Tool
 
+# Visit the site here :
+https://mustafaahmed00.github.io/password-manager/
+
 ## Introduction
 The Password Safety Tool is a comprehensive web application designed to help users generate, evaluate, and manage strong passwords. It includes features for password strength analysis, custom password generation, password encryption, breach checking, and secure note management. This tool aims to enhance users' cybersecurity by promoting the use of strong and unique passwords for different applications.
 
