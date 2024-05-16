@@ -1,6 +1,6 @@
 # Password Safety Tool
 
-# Visit the site here :
+## Visit the site here :
 https://mustafaahmed00.github.io/password-manager/
 
 ## Introduction
@@ -30,7 +30,7 @@ To run the Password Safety Tool locally, follow these steps:
 3. Open index.html in your web browser to start using the application.
 
 ## Usage
-# Main Page
+### Main Page
 - **Password Strength Checker**: Enter a password and click "Check Password Strength" to evaluate its strength.
 - **Suggested Strong Password**: Click "Generate Strong Password" to get a recommended strong password.
 - **Save Password**: Enter the password details and click "Save Password". Click "View Saved Passwords" to see the saved passwords.
@@ -38,11 +38,11 @@ To run the Password Safety Tool locally, follow these steps:
 - **Secure Notes**: Enter a note and an encryption key, then click "Encrypt Note" to encrypt the note or "Decrypt Note" to decrypt it.
 - **Breach Checker**: Enter a password and click "Check if Breached" to see if the password has been compromised in known data breaches.
 - **Dark Mode**: Toggle the dark mode switch to change the theme.
-# Custom Password Generator
+### Custom Password Generator
 - **Navigate to the Custom Password Generator page.**
 - **Customize the password criteria (length, inclusion of uppercase letters, numbers, symbols).**
 - **Click "Generate Password" to create a custom password.**
 - **Click "Copy to Clipboard" to copy the generated password.**
-# Saved Passwords
+### Saved Passwords
 - **Navigate to the Saved Passwords page.**
 - **View saved passwords in a structured table format.**
